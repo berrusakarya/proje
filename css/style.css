@@ -1,0 +1,389 @@
+/****GENERAL*****/
+* {box-sizing: border-box;margin: 0;padding: 0;}
+*::-webkit-scrollbar {width: 8px;background-color: rgb(243, 236, 236);} 
+*::-webkit-scrollbar-track {background-color: rgb(247, 231, 231);} 
+*::-webkit-scrollbar-thumb {background-color: var(--color);border-radius: 5px;}
+
+:root { 
+    --color: rgb(36, 76, 136);
+ }
+
+html {scroll-behavior: smooth;}
+body {font-family: sans-serif;}
+h1 {font-size: 24px;}
+p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #777; 
+    text-align: justify;
+}
+a {
+    text-decoration: none;
+    color: #777; 
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+li{
+    list-style-type: none;
+}
+form {
+    max-width: 100%;
+    margin: 30px 0;
+}
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    outline: none;
+    border: 2px solid var(--color);
+    box-shadow: none;
+    border-radius: 5px;
+}
+hr {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid var(--color);
+}
+
+/*****General class*****/
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+.text-left {
+    text-align: left !important; 
+}
+.text-right {
+    text-align: right !important; 
+}
+.circle {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 15px 0;
+    background-color: var(--color);
+    border-radius: 50%;
+}
+.line {
+    line-height: 8px;
+}
+.line-1, .line-2, .line-3 {
+    display: inline-block;
+    background-color: var(--color);
+}
+
+.line-1 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.line-2 {
+    width: 80px;
+    height: 1px;   
+}
+.line-3 {
+    width: 60px;
+    height: 1px;
+    
+}
+.buton {
+    padding: 15px 35px;
+    outline: none;
+    border: 2px solid var(--color);
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 1s;
+}
+.buton:hover {
+    background-color: var(--color);
+}
+
+/****HEADER****/
+#header {
+    height: 80vh;
+    background: url("../img/1.png") center right/contain no-repeat;
+}
+.logo {
+    width: 200px;
+    margin-top: 30px;
+}
+.header-content {
+    max-width: 400px;
+    margin-top: 50px;
+
+}
+.daha-fazla {
+    margin: 20px 0 30px 0;
+}
+#sideNav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background-color: var(--color);
+    z-index: 1;
+    overflow: hidden;
+    transition: 0,5s;
+}
+
+#sideNav ul li{
+    margin: 30px;
+}
+
+#sideNav ul li:first-child {
+    margin-top: 45px;
+}
+
+#sideNav ul li a{
+    color: rgb(245, 237, 237);
+}
+
+#menuBtn {
+    background-color: var(--color);
+    width: 50px;
+    position: fixed;
+    right: 40px;
+    top: 35px;
+    border-radius: 5px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/****Hakkımızda****/
+#Hakkimizda, #Hizmetler {
+    padding: 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.hakkimizda-left, .hakkimizda-right {
+    flex-basis: 50%;
+}
+.hakkimizda-left img {
+    border-radius: 50px;
+}
+.hakkimizda-content{
+    max-width: 400px;
+    display: inline-block;
+}
+.hakkimizda-content h2 {
+    font-size: 18px;
+    margin: 50px 0 10px;
+    font-style: italic;
+}
+.hakkimizda-content h3 {
+    font-size: 20px;
+    color: #757575;
+    font-style: italic;
+}
+
+#Hizmetler .buton {
+    margin: 30px 0;
+}
+
+/****Özellikler****/
+#ozellikler { 
+    padding: 70px 0;
+}
+.ozellikler-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+.ozellikler-col {
+    flex-basis: 25%;
+    text-align: center;
+}
+.ozellikler-col img {
+    width: 100px;  
+}
+.ozellikler-col h4 {
+    margin: 15px;
+    font-size: 20px;
+    font-weight: 400;  
+}
+.ozellikler-col p {
+    text-align: center;  
+}
+.ozellikler-btn {
+    margin: 80px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;  
+}
+.ozellikler-btn .line {
+    text-align: right;  
+    margin-right: 25px;
+}
+
+/****ABCD-İletişim****/
+#ABCD, #Iletisim {
+    padding: 70px 0;
+}
+
+.ABCD-row, .Iletisim-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ABCD-left, .ABCD-right, .Iletisim-left, .Iletisim-right {
+    flex-basis: 50%;
+}
+
+.ABCD-content {
+    max-width: 400px;
+}
+
+.ABCD-content .buton {
+    margin: 30px 0;
+}
+
+.btn-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-box .buton{
+   flex-basis: 48%;
+}
+
+/****Footer****/
+
+#footer {
+    margin: 30px 0;
+}
+.footer-row, .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-left {
+    flex-basis: 30%;
+}
+.footer-right {
+    flex-basis: 70%;
+    margin-top: 50px;
+}
+.link-title h4{
+    margin-bottom: 15px; 
+    color: var(--color);
+}
+.copyright img {
+display: block;
+width: 200px;
+margin: 40px 0;
+}
+
+.copyright small, .link-title small {
+    display: block;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.8;
+}
+
+/*****Sosyal İkon****/
+.sosyal-ikon{
+    position: fixed;
+    top: 40%;
+    left: 0;
+    z-index: 1;
+}
+.sosyal-ikon a{
+    display: block;
+    margin: 0 0 15px 20px;
+    cursor: pointer;
+    font-size: 25px;
+}
+.sosyal-ikon a:hover{
+    transform: scale(1.5);
+}
+
+/*******Responsive******/
+@media only screen and (max-width: 700px) {
+
+
+
+/****General****/
+h1 {
+    font-size: 22px;
+}
+.buton {
+    padding: 10px 16px;
+}
+.container {
+    margin: 0px 45px;
+}
+
+/****Header*****/
+ 
+#header {
+    height: 75vh;
+    background: none;
+}
+
+.logo {
+    width: 175px;
+    margin-top: 25px;
+}
+
+#sideNav {
+    max-width: 200px;
+}
+
+#menuBtn {
+    width: 40px;
+    right: 20px;
+}
+
+/****Hakkımızda***/
+
+.hakkimizda-left, .hakkimizda-right {
+    flex-basis: 100%;
+}
+
+.hakkimizda-content {
+    margin: 50px 20px 0;
+}
+
+
+/************/
+
+.ozellikler-col {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+
+.ABCD-left, .ABCD-right,
+.Iletisim-left, .Iletisim-right,
+.footer-left, .footer-right 
+{
+    flex-basis: 100%;
+}
+
+.ABCD-left, .ABCD-right {
+    margin-top: 75px;   
+}
+
+#Hizmetler img {
+    display: none;
+}
+
+.link-title {
+    flex-basis: 50%;
+    margin-bottom: 30px;
+}
+
+
+}
+

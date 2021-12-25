@@ -1,0 +1,107 @@
+/****GENERAL*****/
+* {box-sizing: border-box;margin: 0;padding: 0;}
+*::-webkit-scrollbar {width: 8px;background-color: #eee;} 
+*::-webkit-scrollbar-track {background-color: rgb(230, 222, 222);} 
+*::-webkit-scrollbar-thumb {background-color: var(--color);border-radius: 5px;}
+
+:root { --color: rgb(39, 102, 219); }
+
+html {scroll-behavior: smooth;}
+body {font-family: sans-serif;}
+h1 {font-size: 24px;}
+p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #777; 
+    text-align: justify;
+}
+a {
+    text-decoration: none;
+    color: #777; 
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+li{
+    list-style-type: none;
+}
+form {
+    max-width: 100%;
+    margin: 30px 0;
+}
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    outline: none;
+    border: 2px solid var(--color);
+    box-shadow: none;
+    border-radius: 5px;
+}
+hr {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid var(--color);
+}
+
+/*****General class*****/
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+.text-left {
+    text-align: left !important; 
+}
+.text-right {
+    text-align: right !important; 
+}
+circle {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 15px 0;
+    background-color: var(--color);
+}
+.line {
+    line-height: 8px;
+}
+.line1, .line2, .line3 {
+    display: inline-block;
+    background-color: var(--color);
+}
+
+.line1 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.line2 {
+    width: 80px;
+    height: 1px;   
+}
+.line3 {
+    width: 60px;
+    height: 15px;
+    
+}
+.buton {
+    padding: 15px 35px;
+    outline: none;
+    border: 2px solid var(--color);
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 1s;
+}
+.buton:hover {
+    background-color: var(--color);
+}
+
+/****HEADER****/
+#header {
+    height: 80vh;
+    background: url("img/1.png") center right/contain no-repeat;
+}
